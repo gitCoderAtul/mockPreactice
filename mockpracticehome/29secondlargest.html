@@ -1,0 +1,16 @@
+<script>
+    var arr = [10,20,30,40];
+    var largest = -Infinity;
+    var secondlargest = -Infinity;
+
+    for(val of arr){
+        if(val>largest){
+            secondlargest=largest;
+            largest=val
+        }
+        else if(val>secondlargest && val<largest){
+            secondlargest=val
+        }
+    }
+    console.log(secondlargest);
+</script>
